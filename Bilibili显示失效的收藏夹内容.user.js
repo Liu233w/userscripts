@@ -2,7 +2,7 @@
 // @name         Bilibili显示失效的收藏夹内容
 // @namespace    https://liu233w.github.io
 // @version      0.1
-// @description  Bilibili显示失效的收藏夹内容
+// @description  RT，将标题中的“视频已失效”替换成实际的视频名称。
 // @author       Liu233w
 // @license      BSD 3-Clause License
 // @match        https://space.bilibili.com/*
