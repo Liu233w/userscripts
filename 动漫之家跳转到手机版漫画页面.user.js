@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         动漫之家跳转到手机版漫画页面
 // @namespace    https://liu233w.com/dmzj-go-mobile
-// @version      0.1
+// @version      0.2
 // @description  在漫画浏览页面的左下角添加一个按钮，单击之后跳转到手机版的相应页面
 // @author       Liu233w
 // @match        http://manhua.dmzj.com/*
@@ -13,6 +13,7 @@
 
 (function () {
     'use strict';
+    console.log('run')
 
     function gotoMobile() {
         const l = window.location
@@ -22,6 +23,18 @@
     const btn = document.createElement('button')
     btn.innerHTML = '切换到手机版'
     btn.onclick = gotoMobile
+    btn.style.position = 'fixed'
+    btn.style.bottom = '40px'
+    btn.style.left = '40px'
+    window.btn = btn
 
-    $('#floatCode').prepend(btn)
+    let oldOnLoad = () => {}
+    if (window.onload) {
+        oldOnLoad = window.onload
+    }
+    window.onload = () => {
+        console.log('ready')
+        document.querySelector('.footer').appendChild(btn)
+        oldOnLoad()
+    }
 })();
