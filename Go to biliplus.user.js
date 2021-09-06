@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Go to biliplus
 // @namespace    https://liu233w.github.io
-// @version      0.3
+// @version      1.0.0
 // @description  给tucao.one的某些页面的视频条目添加一个链接，一键跳转到对应的biliplus地址
 // @author       Liu233w
 // @match        https://www.tucao.one/*
@@ -20,7 +20,7 @@
         })
 
     } else if (window.location.href.indexOf("www.tucao.one/list/") > -1) {
-        $('.box').each(function () {
+        $('li .box').each(function () {
             const href = $(this).find('a.title').attr('href')
             const vid = href.match(/(h\d+)/)[0]
             $(this).find('.info').append(`<a href="https://www.biliplus.com/play/${vid}/">BiliPlus</a>`)
