@@ -2,7 +2,7 @@
 // @name         Go to biliplus
 // @namespace    https://liu233w.github.io
 // @version      0.2
-// @description  在tucao.one的搜索页面的每个条目添加一个链接，一键跳转到对应的biliplus地址
+// @description  给tucao.one的某些页面的视频条目添加一个链接，一键跳转到对应的biliplus地址
 // @author       Liu233w
 // @match        https://www.tucao.one/
 // @icon         https://www.google.com/s2/favicons?domain=tucao.one
