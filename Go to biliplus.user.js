@@ -4,7 +4,7 @@
 // @version      1.0.0
 // @description  给tucao.one的某些页面的视频条目添加一个链接，一键跳转到对应的biliplus地址
 // @author       Liu233w
-// @match        https://www.tucao.one/*
+// @match        https://www.tucao.*/*
 // @icon         https://www.google.com/s2/favicons?domain=tucao.one
 // @grant        none
 // ==/UserScript==
