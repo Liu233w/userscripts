@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Go to biliplus
 // @namespace    https://liu233w.github.io
-// @version      1.0.0
+// @version      1.0.1
 // @description  给tucao.one的某些页面的视频条目添加一个链接，一键跳转到对应的biliplus地址
 // @author       Liu233w
 // @match        https://www.tucao.*/*
